@@ -1,0 +1,67 @@
+body {
+    background-color: #ffb8b8;
+}
+.game {
+    width: 800px;
+    height: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    margin: auto;
+}
+#player {
+    width: 50px;
+    height: 70px;
+    background-image: url(https://www.pngrepo.com/png/114820/180/running-man.png);
+    background-size: 50px 70px;
+    position: relative;
+    top: 150px;
+}
+#object {
+    width: 40px;
+    height: 40px;
+    background-image: url(https://static.thenounproject.com/png/47216-200.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px;
+    left: 800px;
+    animation: objectMov 3.5s infinite linear;
+}
+@keyframes objectMov {
+    0% {
+        left: 800px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.9s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    15% {
+        top: 100px;
+    }
+    25% {
+        top: 50px;
+    }
+    45% {
+        top: 0px;
+    }
+    60% {
+        top: 50px;
+    }
+    75% {
+        top: 80px;
+    }
+    85% {
+        top: 105px
+    }
+    100% {
+        top: 150 px;
+    }
+}
+
